@@ -1,0 +1,37 @@
+/*
+Colors
+------
+Red:        #DB152C
+Dark Gray:  #2B2828
+Blue:       #16BECF
+White:      #FFFFFF
+Light Gray: #D5DBD8
+*/
+
+
+body {
+  margin: 50;
+  padding: 0;
+  font-size: 14px;
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #2B2828;
+  color: #D5DBD8;
+}
+
+h1,
+h2 {
+  color: #d23c3c;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#paragraph {
+  max-width: 900px;
+  text-align: justify;
+}
+
+
+.catch {
+  color: #d23c3c;
+  font-weight: bold;
+}
