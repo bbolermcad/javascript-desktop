@@ -29,11 +29,12 @@ document.getElementById('BtnDonate').addEventListener('click', function(){
     donateheader.appendChild(donatetext);
     document.getElementById("SideNav").appendChild(donateheader);
     donateheader.setAttribute("style", "color:#DB152C");
+
     var articles = document.getElementsByTagName("article");
-    for (var i = 0; i < articles.length; i++) {
-    articles[i].className = "generous-donation";
+    for var (i = 0; i < articles.length; i++) {
+      articleName[i].className = "generous-donation";
+    }
   }
-}
 
   else {
     var donateheader = document.createElement("H3");
