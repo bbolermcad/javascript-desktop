@@ -65,12 +65,18 @@ document.getElementById('BtnChurchill').addEventListener('click', function(){
     for (i = 0; i < speechesArray.length; i++) {
       if(speechesArray[i].year < oldestyear) {
         oldestyear = speechesArray[i].year;
-        console.log("This is the oldest speech on the page.")
       }
       if (speechesArray[i].year > recentyear) {
         recentyear = speechesArray[i].year;
-        console.log("THis is the most recent speech on the page");
       }
+    }
+
+    if(speechesArray[0].year === oldestyear) {
+      console.log('This is the oldest speech on the page. ')
+    }
+
+    if(speechesArray[0].year === recentyear) {
+      console.log("This is the most recent speech on the page. ")
     }
 });
 
@@ -85,18 +91,22 @@ document.getElementById('BtnGhandi').addEventListener('click', function(){
   }
 
 
-//new Code
+  for (i = 0; i < speechesArray.length; i++) {
+    if(speechesArray[i].year < oldestyear) {
+      oldestyear = speechesArray[i].year;
+    }
+    if (speechesArray[i].year > recentyear) {
+      recentyear = speechesArray[i].year;
+    }
+  }
 
-for (i = 0; i < speechesArray.length; i++) {
-  if(speechesArray[i].year < oldestyear) {
-    oldestyear = speechesArray[i].year;
-    console.log("This is the oldest speech on the page.")
+  if(speechesArray[1].year === oldestyear) {
+    console.log('This is the oldest speech on the page. ')
   }
-  if (speechesArray[i].year > recentyear) {
-    recentyear = speechesArray[i].year;
-    console.log("THis is the most recent speech on the page");
+
+  if(speechesArray[1].year === recentyear) {
+    console.log("This is the most recent speech on the page. ")
   }
-}
 
 });
 
@@ -113,12 +123,18 @@ document.getElementById('BtnDemosthenes').addEventListener('click', function(){
   for (i = 0; i < speechesArray.length; i++) {
     if(speechesArray[i].year < oldestyear) {
       oldestyear = speechesArray[i].year;
-      console.log("This is the oldest speech on the page.")
     }
     if (speechesArray[i].year > recentyear) {
       recentyear = speechesArray[i].year;
-      console.log("THis is the most recent speech on the page");
     }
+  }
+
+  if(speechesArray[2].year === oldestyear) {
+    console.log('This is the oldest speech on the page. ')
+  }
+
+  if(speechesArray[2].year === recentyear) {
+    console.log("This is the most recent speech on the page. ")
   }
 
 });
