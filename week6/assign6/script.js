@@ -62,30 +62,16 @@ document.getElementById('BtnChurchill').addEventListener('click', function(){
   }
 
 
-    /* this was my Code
     for (i = 0; i < speechesArray.length; i++) {
-      if (speechesArray[i].year > oldestyear) {
-        console.log("This is the newest speech on the page")
-      }
-
-      if (speechesArray[i].year < oldestyear) {
+      if(speechesArray[i].year < oldestyear) {
+        oldestyear = speechesArray[i].year;
         console.log("This is the oldest speech on the page.")
       }
-    }
-
-    This is the code i learned from Kellen Anders because it made the most sense to me when I read it but it actually still does not work for me */
-
-    for (i = 0; i < speechesArray.length; i++) {
-      while (speechesArray[i].year < oldestyear) {
-        oldestyear = speechesArray[i].year;
-        console.log("This is the oldest speech on the page.");
-      };
-      while (speechesArray[i].year > recentyear) {
+      if (speechesArray[i].year > recentyear) {
         recentyear = speechesArray[i].year;
         console.log("THis is the most recent speech on the page");
       }
     }
-
 });
 
 document.getElementById('BtnGhandi').addEventListener('click', function(){
@@ -101,7 +87,16 @@ document.getElementById('BtnGhandi').addEventListener('click', function(){
 
 //new Code
 
-
+for (i = 0; i < speechesArray.length; i++) {
+  if(speechesArray[i].year < oldestyear) {
+    oldestyear = speechesArray[i].year;
+    console.log("This is the oldest speech on the page.")
+  }
+  if (speechesArray[i].year > recentyear) {
+    recentyear = speechesArray[i].year;
+    console.log("THis is the most recent speech on the page");
+  }
+}
 
 });
 
@@ -115,5 +110,15 @@ document.getElementById('BtnDemosthenes').addEventListener('click', function(){
     console.log('This speech took place during the common era.');
   }
 
+  for (i = 0; i < speechesArray.length; i++) {
+    if(speechesArray[i].year < oldestyear) {
+      oldestyear = speechesArray[i].year;
+      console.log("This is the oldest speech on the page.")
+    }
+    if (speechesArray[i].year > recentyear) {
+      recentyear = speechesArray[i].year;
+      console.log("THis is the most recent speech on the page");
+    }
+  }
 
 });
