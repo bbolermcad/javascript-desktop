@@ -24,6 +24,14 @@ var churchillSpeech = {
       document.getElementById("ConsoleDisplay").innerHTML = 'This speech was written by ' + speechesArray[i].author + ' in ' + speechesArray[i].year + ".  ";
     };
 
+    var displayBCEString = function(i) {
+      if(speechesArray[i].yearIsBCE === true){
+        document.getElementById("ConsoleDisplay").innerHTML +='This speech took place before the common era.';
+      }else{
+        document.getElementById("ConsoleDisplay").innerHTML +='This speech took place during the common era.';
+      }
+    };
+
 document.getElementById('BtnDonate').addEventListener('click', function(){
   var donation = prompt("Thank you for donating!   How much would you like to contribute?")
 
@@ -51,13 +59,15 @@ document.getElementById('BtnDonate').addEventListener('click', function(){
 document.getElementById('BtnChurchill').addEventListener('click', function(){
   //Code in here executes when the user clicks the "Churchill" button.
 
-  getAuthorAndYearString(0)
+  getAuthorAndYearString(0);
 
-  if(speechesArray[0].yearIsBCE === true){
+  displayBCEString(0);
+
+  /*if(speechesArray[0].yearIsBCE === true){
     document.getElementById("ConsoleDisplay").innerHTML +='This speech took place before the common era.';
   }else{
     document.getElementById("ConsoleDisplay").innerHTML +='This speech took place during the common era.';
-  }
+  }*/
 
   var oldest = speechesArray[0].year,
       newest = speechesArray[0].year;
@@ -81,13 +91,10 @@ document.getElementById('BtnChurchill').addEventListener('click', function(){
 
 document.getElementById('BtnGhandi').addEventListener('click', function(){
 
-  getAuthorAndYearString(1)
+  getAuthorAndYearString(1);
 
-  if(speechesArray[1].yearIsBCE === true){
-    document.getElementById("ConsoleDisplay").innerHTML +='This speech took place before the common era.';
-  }else{
-    document.getElementById("ConsoleDisplay").innerHTML += 'This speech took place during the common era.';
-  }
+  displayBCEString(1);
+
 
   var oldest = speechesArray[0].year,
       newest = speechesArray[0].year;
@@ -113,14 +120,11 @@ document.getElementById('BtnDemosthenes').addEventListener('click', function(){
   //Code in here executes when the user clicks the "Demosthenes" button.
 
 
-  getAuthorAndYearString(2)
+  getAuthorAndYearString(2);
+
+  displayBCEString(2);
 
 
-  if(speechesArray[2].yearIsBCE === true){
-    document.getElementById("ConsoleDisplay").innerHTML += 'This speech took place before the common era.';
-  }else{
-    document.getElementById("ConsoleDisplay").innerHTML += 'This speech took place during the common era.';
-  }
 
   var oldest = speechesArray[0].year,
       newest = speechesArray[0].year;
