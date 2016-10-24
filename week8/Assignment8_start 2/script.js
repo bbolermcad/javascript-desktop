@@ -20,12 +20,12 @@ var churchillSpeech = {
     speechesArray = [churchillSpeech, ghandiSpeech, demosthenesSpeech],
     donatePrompt;
 
-    function getAuthorAndYearString(x) {
+    function getAuthorAndYearString(i) {
     document.getElementById("ConsoleDisplay").innerHTML = 'This speech was written by ' + speechesArray[i].author + ' in ' + speechesArray[i].year + ".  ";
   };
 
   //this function will check if BCE is true for whatever string number is entered
-  function displayBCEString(x) {
+  function displayBCEString(i) {
     if(speechesArray[i].yearIsBCE === true){
       document.getElementById("ConsoleDisplay").innerHTML +='This speech took place before the common era.';
     }else{
@@ -34,11 +34,11 @@ var churchillSpeech = {
   };
 
   //this function will check to see if the year is the newest by comparing them.  I am a bit confused about why this doesn't work, I took a peak at a few other students codes and while I did mine differently and perhaps incorrectly, i feel like the function is doing the same thing.  I just left the variable as i.
-  function getOldestOrYoungestString(x) {
+  function getOldestOrYoungestString(i) {
     var oldest = speechesArray[0].year;
         newest = speechesArray[0].year;
 
-    for(var i = 0; i < speechesArray.length; i++){
+    for(var x = 0; x < speechesArray.length; x++){
       if(speechesArray[i].year < oldest){
         oldest = speechesArray[i].year;
       }
