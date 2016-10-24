@@ -20,6 +20,39 @@ var churchillSpeech = {
     speechesArray = [churchillSpeech, ghandiSpeech, demosthenesSpeech],
     donatePrompt;
 
+  function getAuthorAndYearString(i) {
+  document.getElementById("ConsoleDisplay").innerHTML = 'This speech was written by ' + speechesArray[i].author + ' in ' + speechesArray[i].year + ".  ";
+};
+
+function displayBCEString(i) {
+  if(speechesArray[i].yearIsBCE === true){
+    document.getElementById("ConsoleDisplay").innerHTML +='This speech took place before the common era.';
+  }else{
+    document.getElementById("ConsoleDisplay").innerHTML +='This speech took place during the common era.';
+  }
+};
+
+function getOldestOrYoungestString(i) {
+  var oldest = speechesArray[0].year,
+      newest = speechesArray[0].year;
+
+  for(var i = 0; i < speechesArray.length; i++){
+    if(speechesArray[i].year < oldest){
+      oldest = speechesArray[i].year;
+    }
+    if(speechesArray[i].year > newest){
+      newest = speechesArray[i].year;
+    }
+  }
+
+  if(speechesArray[i].year === oldest){
+    document.getElementById("ConsoleDisplay").innerHTML += 'This is the oldest speech on the page.  ';
+  }
+  if(speechesArray[i].year === newest){
+    document.getElementById("ConsoleDisplay").innerHTML += 'This is the most recent speech on the page.  ';
+  }
+};
+
 document.getElementById('BtnDonate').addEventListener('click', function(){
   //Code in here executes when the user clicks the "Donate" button.
   var donationDisplay = document.createElement('h3'),
