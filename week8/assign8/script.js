@@ -92,9 +92,11 @@ document.getElementById('BtnChurchill').addEventListener('click', function(){
 
 document.getElementById('BtnGhandi').addEventListener('click', function(){
   //Code in here executes when the user clicks the "Ghandi" button.
-getAuthorAndYearString(1);
-displayBCEString(1);
-getOldestOrYoungestString(1);
+
+  //the following applies the three functions to this string
+  getAuthorAndYearString(1);
+  displayBCEString(1);
+  getOldestOrYoungestString(1);
 
 
 });
@@ -102,8 +104,8 @@ getOldestOrYoungestString(1);
 document.getElementById('BtnDemosthenes').addEventListener('click', function(){
   //Code in here executes when the user clicks the "Demosthenes" button.
 
-getAuthorAndYearString(2);
-displayBCEString(2);
-getOldestOrYoungestString(2);
+  getAuthorAndYearString(2);
+  displayBCEString(2);
+  getOldestOrYoungestString(2);
 
 });
