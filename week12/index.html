@@ -3,14 +3,62 @@
 <head>
 <title>Recipes</title>
 
+<style>
+html {
+     box-sizing: border-box;
+   }
+   *, *:before, *:after {
+     box-sizing: inherit;
+   }
+
+   html {
+   	background-color: #00cc99;
+   }
+
+   h1 {
+   	font-weight: bold;
+   	text-align: center;
+   	color: white;
+   	size: 3em;
+   }
+
+   nav ul {
+   	list-style-type: none;
+   	padding-top: 3em;
+   	max-width: 30%;
+   	float: left;
+   }
+
+   .recipearea {
+   	float: right;
+   	max-width: 70%;
+   	background-color: #f9f3d9;
+   	border-width: 5px;
+   	border-style: dotted;
+   	border-color: white;
+   	padding-left: 2em;
+   	overflow: auto; 
+   }
+
+   button {
+   	background-color: white;
+   	color: #00cc99;
+   	text-align: center;
+   	padding: 10px;
+   	margin: 10px;
+   	font-weight: bold;
+   }
+
+</style>
+
 <script src="jquery.js"></script>
-<script src="javascript.js"></script>
+<script src="script.js"></script>
 </head>
 <body>
 
 <header><h1>Recipe's A Go Go</h1></header>
 
-<nav class="recipe list">
+<nav class="recipelist">
 	<ul>
 		<li><button class="r1">Sarah's Applesauce</button></li>
 		<li><button class="r2">Morning Glory Muffins I</button></li>
@@ -22,13 +70,13 @@
 	</ul>
 </nav>
 
-<section class="recipe area">
+<section class="recipearea">
 <div id ="recipeone" class="recipe">
 <h2>Sarah's Applesauce</h2>
-	<p>Cook Time: 20 Minutes</p>
-	<p>Ready In: 30 Minutes</p>
-	<p>Servings: 4</p>
-	<q>This applesauce is delicious! I make it for my younger brother all the time. He loves it, and he hates canned applesauce!</q>
+	Cook Time: 20 Minutes</br>
+	Ready In: 30 Minutes</br>
+	Servings: 4</br>
+	<p><q>This applesauce is delicious! I make it for my younger brother all the time. He loves it, and he hates canned applesauce!</q></p>
 <b>INGREDIENTS:</b>
 	<ul>
 		<li>4 apples - peeled, cored and chopped</li>
@@ -46,7 +94,7 @@
 	Cook Time: 20 Minutes</br>
 	Ready In: 35 Minutes</br>
 	Servings: 18</br>
-<q>This muffin has a little bit of everything - carrots, raisins, apple butter, wheat germ, nuts. A perfect start for your day!</q>
+<p><q>This muffin has a little bit of everything - carrots, raisins, apple butter, wheat germ, nuts. A perfect start for your day!</q></p>
 <b>INGREDIENTS:</b>
 	<ul>
 		<li>1 1/2 cups all-purpose flour</li>
@@ -80,7 +128,7 @@
 <div id="recipethree" class="recipe">
 <h2>Out of this World Turkey Brine</h2>
 	Servings: 12</br>
-	<q>Best brine for smoked turkey around. This recipe was given to me by my uncle. He is always smoking meat.</q>
+	<p><q>Best brine for smoked turkey around. This recipe was given to me by my uncle. He is always smoking meat.</q></p>
 <b>INGREDIENTS:</b>
 	<ul>
 		<li>2 gallons water</li>
@@ -101,7 +149,7 @@
 	Cook Time: 1 Hour 30 Minutes</br>
 	Ready In: 2 Hours 30 Minutes</br>
 	Servings: 8</br>
-	<q>Cubed chicken breast meat is slowly simmered with chile peppers, bell peppers, mushrooms, beans, white wine, herbs and spices in this chili-like soup.</q>
+	<p><q>Cubed chicken breast meat is slowly simmered with chile peppers, bell peppers, mushrooms, beans, white wine, herbs and spices in this chili-like soup.</q></p>
 <b>INGREDIENTS:</b>
 	<ul>
 		<li>1 tablespoon olive oil</li>
@@ -140,7 +188,7 @@
 	Cook Time: 3 Hours</br>
 	Ready In: 7 Hours 15 Minutes</br>
 	Servings: 8</br>
-	<q>This tangy marinade for grilled pork shoulder is swimming with spices. You'll really taste the garlic!</q>
+	<p><q>This tangy marinade for grilled pork shoulder is swimming with spices. You'll really taste the garlic!</q></p>
 <b>INGREDIENTS:</b>
 	<ul>
 		<li>1/4 cup chopped garlic</li>
@@ -176,7 +224,7 @@
 	Prep Time: 20 Minutes</br>
 	Ready In: 1 Hour 20 Minutes</br>
 	Servings: 6</br>
-	<q>This uniquely refreshing minty salad has the refreshing flavors of mojitos and fresh fruit.</q>
+	<p><q>This uniquely refreshing minty salad has the refreshing flavors of mojitos and fresh fruit.</q></p>
 <b>INGREDIENTS:</b>
 	<ul>
 		<li>1 cup cubed seeded watermelon</li>
@@ -204,7 +252,7 @@
 	Cook Time: 15 Minutes</br>
 	Ready In: 1 Hour</br>
 	Servings: 4</br>
-	<q>A mushroom and tofu extravaganza! The exotic ingredients in this enticing soup may be found in Asian grocery stores. Don't let the extra effort keep you from trying this tasty treat!</q>
+	<p><q>A mushroom and tofu extravaganza! The exotic ingredients in this enticing soup may be found in Asian grocery stores. Don't let the extra effort keep you from trying this tasty treat!</q></p>
 <b>INGREDIENTS:</b>
 	<ul>
 		<li>1 ounce dried wood ear mushrooms</li>
