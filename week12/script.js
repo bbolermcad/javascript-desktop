@@ -10,7 +10,7 @@ $("document").ready(function() {
 	$(".r1").click(function(){
 		$(".recipe").hide()
 		$("#recipeone").show();
-		$("q:first").animate({"right": "+=50px"}, "slow");
+		$(".moveit").animate({"left": "+=50px"}, "slow");
 	});
 
 	//one fade event
