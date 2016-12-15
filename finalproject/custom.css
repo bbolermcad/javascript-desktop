@@ -1,0 +1,108 @@
+@font-face {
+    font-family: Aller;
+    src: url(fonts/allerbold.ttf);
+}
+
+@font-face {
+	font-family: Montserrat;
+	src: url(fonts/Montserrat-Bold.otf);
+}
+
+h1 {
+	font-family: Montserrat;
+	letter-spacing: 8px;
+}
+
+h2 {
+	font-family: Montserrat;
+}
+
+h3 {
+	font-family: Montserrat;
+}
+
+.jumbotron-fluid {
+	background: url(img/sparklegirlsmall.jpg) no-repeat;
+	min-height: 800px;
+	color: white;
+	margin-bottom: 0em;
+}
+
+.overview {
+	background: url(img/padded.png) repeat;
+	text-align: center;
+	color: white;
+	margin-top: 0em;
+	min-height: 300px;
+	position: relative;
+}
+
+.overview-text {
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.services {
+	background: url(img/connect.png) repeat;
+	padding-bottom: 60px;
+}
+
+.projectsheader {
+	background: url(img/padded.png) repeat;
+	text-align: center;
+	color: white;
+	margin-top: 0em;
+	min-height: 300px;
+	position: relative;
+}
+
+.gallery {
+	background: url(img/connect.png) repeat;
+	margin-bottom: 0em;
+}
+
+.image-row {
+	margin: 0 auto;
+	max-width: 700px;
+}
+
+.projects {
+	display: inline-block;
+	margin: 1em;
+}
+
+.hideme {
+	opacity: 0;
+}
+
+
+
+.aboutme{
+	margin-top: 0em;
+	color:white;
+	background: url(img/padded.png) repeat;
+	position: relative;
+	max-height: 600px;
+}
+
+.aboutme h2 {
+	text-align: center;
+	padding-top: 1em;
+}
+
+
+.myprofile {
+margin: 0 auto;
+max-width: 500px;
+padding-bottom: 1em;
+}
+.profile {
+	border-radius: 50%;
+	padding-top: 1em;
+}
+
+#navbar {
+	color:white;
+}
